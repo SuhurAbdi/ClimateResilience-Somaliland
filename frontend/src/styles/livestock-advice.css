@@ -1,0 +1,258 @@
+/* ========================================
+   LIVESTOCK ADAPTATION ADVICE
+======================================== */
+
+.livestock-notice {
+  margin-top: 22px;
+  padding: 17px 20px;
+  border: 1px solid #b7e4ca;
+  border-left: 4px solid #16845b;
+  border-radius: 10px;
+  background: #f0faf4;
+  color: #365c45;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.livestock-notice strong {
+  color: #166534;
+}
+
+.livestock-api-message {
+  margin: 16px 0;
+  padding: 13px 16px;
+  border: 1px solid #e5eee9;
+  border-radius: 9px;
+  background: #f8faf9;
+  color: #596b60;
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+/* Search and language controls */
+
+.livestock-controls {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 22px 0;
+  padding: 18px;
+  border: 1px solid #e5eee9;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.livestock-controls input,
+.livestock-controls select {
+  min-width: 0;
+  padding: 12px 14px;
+  border: 1px solid #dbe5df;
+  border-radius: 8px;
+  background: #fff;
+  color: #1f2937;
+  font: inherit;
+  font-size: 13px;
+  outline: none;
+}
+
+.livestock-controls input {
+  flex: 1;
+}
+
+.livestock-controls select {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.livestock-controls input:focus,
+.livestock-controls select:focus {
+  border-color: #16845b;
+  box-shadow: 0 0 0 3px rgb(22 132 91 / 12%);
+}
+
+.livestock-controls input::placeholder {
+  color: #9ca3af;
+}
+
+/* Section heading */
+
+.page-container > .section-title {
+  margin: 26px 0 18px;
+  color: #1f2937;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+/* Advice cards */
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.forecast-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid #e5eee9;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgb(15 23 42 / 4%);
+}
+
+.livestock-advice-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-top: 4px solid #16845b;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.livestock-advice-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgb(15 23 42 / 7%);
+}
+
+.advice-category {
+  align-self: flex-start;
+  margin-bottom: 20px;
+  padding: 8px 11px;
+  border-radius: 8px;
+  background: #e7f5ed;
+  color: #166534;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* English and Somali content */
+
+.advice-language-section {
+  min-width: 0;
+}
+
+.advice-language-section h2 {
+  margin: 0 0 12px;
+  color: #1f2937;
+  font-size: 19px;
+  line-height: 1.45;
+}
+
+.advice-language-section h3 {
+  margin: 0 0 12px;
+  color: #166534;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.advice-language-section p {
+  margin: 0;
+  color: #4b5563;
+  font-size: 13px;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.advice-language-section[lang="so"] {
+  padding: 16px;
+  border: 1px solid #d9eee1;
+  border-radius: 10px;
+  background: #f3faf6;
+}
+
+.livestock-advice-card .page-divider {
+  width: 100%;
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Reference and source link */
+
+.advice-source {
+  margin: 20px 0 12px;
+  padding-top: 14px;
+  border-top: 1px solid #edf0ee;
+  color: #6b7280;
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.advice-source strong {
+  color: #374151;
+}
+
+.livestock-source-link {
+  align-self: flex-start;
+  display: inline-block;
+  margin-top: auto;
+  padding: 10px 13px;
+  border: 1px solid #b7e4ca;
+  border-radius: 8px;
+  background: #f0faf4;
+  color: #166534;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.livestock-source-link:hover {
+  border-color: #16845b;
+  background: #e0f3e8;
+  text-decoration: underline;
+}
+
+/* Empty search results */
+
+.empty-message {
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid #e5eee9;
+  border-radius: 10px;
+  background: #f8faf9;
+  color: #596b60;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+  .forecast-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .livestock-controls {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 14px;
+  }
+
+  .livestock-controls input,
+  .livestock-controls select {
+    width: 100%;
+  }
+
+  .forecast-card {
+    padding: 17px;
+  }
+
+  .livestock-notice {
+    padding: 15px;
+  }
+
+  .advice-language-section h2 {
+    font-size: 17px;
+  }
+}

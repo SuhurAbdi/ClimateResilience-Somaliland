@@ -1,0 +1,65 @@
+/* ========================================
+   CLIMATERESILIENCE - BASE STYLES
+======================================== */
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  color: #26352c;
+  background: #f4f7f5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Root Application */
+
+html,
+body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #26352c;
+}
+
+/* Form Controls */
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* Responsive Base */
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 13px;
+  }
+}

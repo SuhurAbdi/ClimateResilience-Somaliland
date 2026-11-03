@@ -1,0 +1,47 @@
+/* ========================================
+   NAVBAR STYLES
+======================================== */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5ebe7;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: #176b45;
+}
+
+.navbar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-location {
+  color: #65736a;
+  font-size: 13px;
+}
+
+/* Responsive Navbar */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 14px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 8px;
+    padding: 12px;
+  }
+}
